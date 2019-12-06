@@ -1,0 +1,115 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7f8b8e49e.js" crossorigin="anonymous"></script>
+    <title>Amigo</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <a href="#"><img class="grafic_logo" src="{% static 'image/amigo.png' %}" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#">Home</a>
+                <a href="{% url 'posts_list_url' %}">Blog</a>
+                <a href="{% url 'BillBoard:main' %}">BillBoard</a>
+                <a href="#">About</a>
+                <a href="#">Contacts</a>
+                <a href="#">Registration</a>
+                <a href="#">Sign in</a>
+                <a id="menu" href="#" class="icon">&#9776;</a>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- content -->
+    <div class="main">
+        
+        <div class="box"><p>1</p></div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        
+    </div>
+    <!-- end content -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer_content">
+                <div class="footer_section about">
+                    <h1 class="logo-text"><span>Amigo</span>Company</h1>
+                    <p>Everything that we do, we do it very good!</p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"> &nbsp; +375(29)796-03-71</i></span>
+                        <span><i class="fas fa-envelope"> &nbsp; romanannaev1992@gmail.com</i></span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="footer_section links">
+                    <h2>Quick Links</h2>
+                    
+                    <ul>
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>About</li>
+                        </a>
+                        <a href="#">
+                            <li>Blog</li>
+                        </a>
+                        <a href="#">
+                            <li>BillBoard</li>
+                        </a>
+                        <a href="#">
+                            <li>Contacts</li>
+                        </a>
+                        <a href="#">
+                            <li>Registration</li>
+                        </a>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer_section contact_form">
+                    <h2>Contact us</h2>
+                    
+                    <form action="#" method="POST">
+                        <input type="email" name="email" class="contact-input" placeholder="Your email adress...">
+                        <textarea name="message" class="contact-input" placeholder="Your message..."></textarea>
+                        <br>
+                        <button type="submit" class="button"><i class="fas fa-envelope"></i>
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                &copy; amigo.com | Stolen by Roman Annaev
+            </div>
+        </div>
+        
+    </footer>
+    <!-- // footer -->
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

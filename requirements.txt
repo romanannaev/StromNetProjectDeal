@@ -1,2 +1,2 @@
-django==2.2.7
-pip install django-bootstrap4
+Django==2.2.7
+django-bootstrap4==1.0.1
